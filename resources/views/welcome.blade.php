@@ -67,33 +67,18 @@
                 <div class="col-lg-4 col-sm-12">
                     <div class="newsletter_main">
                         <h1 class="recent_taital">Recent post</h1>
-                        <div class="recent_box">
-                            <div class="recent_left">
-                                <div class="image_6"><img src="images/img-7.png"></div>
+                        @foreach ($articles as $article)
+                            <div class="recent_box">
+                                <div class="recent_left">
+                                    <div class="image_6"><img src="images/img-7.png"></div>
+                                </div>
+                                <div class="recent_right">
+                                    <h3 class="consectetur_text">{{ $article->title }}</h3>
+                                    <p class="dolor_text">{{ $article->exerpt }} </p>
+                                </div>
                             </div>
-                            <div class="recent_right">
-                                <h3 class="consectetur_text">Consectetur adipiscing</h3>
-                                <p class="dolor_text">ipsum dolor sit amet, consectetur adipiscing </p>
-                            </div>
-                        </div>
-                        <div class="recent_box">
-                            <div class="recent_left">
-                                <div class="image_6"><img src="images/img-7.png"></div>
-                            </div>
-                            <div class="recent_right">
-                                <h3 class="consectetur_text">Consectetur adipiscing</h3>
-                                <p class="dolor_text">ipsum dolor sit amet, consectetur adipiscing </p>
-                            </div>
-                        </div>  
-                        <div class="recent_box">
-                            <div class="recent_left">
-                                <div class="image_6"><img src="images/img-7.png"></div>
-                            </div>
-                            <div class="recent_right">
-                                <h3 class="consectetur_text">Consectetur adipiscing</h3>
-                                <p class="dolor_text">ipsum dolor sit amet, consectetur adipiscing </p>
-                            </div>
-                        </div>
+                        @endforeach
+
                     </div>
 
                 </div>

@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>blogger</title>
+    <title>BLOGGER LARAVEL</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -60,20 +60,19 @@
 
         <section class="antialiased">
             @yield('content')
+            @yield('sidebar')
         </section>
+
         <div class="copyright_section">
             <div class="container">
-                <p class="copyright_text">Copyright 2022 All Right Reserved</p>
+                <p class="copyright_text">Copyright &copy; 2022 All Right Reserved</p>
             </div>
         </div>
         <!-- copyright section end -->
         <!-- Javascript files-->
 
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery-3.0.0.min.js"></script>
-        <script src="js/plugin.js"></script>
-        <!-- sidebar -->
-        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="js/custom.js"></script>
         <!-- javascript -->
 </body>
