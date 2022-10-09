@@ -84,6 +84,15 @@
                                 <h3 class="consectetur_text">Consectetur adipiscing</h3>
                                 <p class="dolor_text">ipsum dolor sit amet, consectetur adipiscing </p>
                             </div>
+                        </div>  
+                        <div class="recent_box">
+                            <div class="recent_left">
+                                <div class="image_6"><img src="images/img-7.png"></div>
+                            </div>
+                            <div class="recent_right">
+                                <h3 class="consectetur_text">Consectetur adipiscing</h3>
+                                <p class="dolor_text">ipsum dolor sit amet, consectetur adipiscing </p>
+                            </div>
                         </div>
                     </div>
 
