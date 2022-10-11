@@ -5,63 +5,27 @@
             <div class="row">
                 <!-- blog section start -->
                 <div class="col-lg-8 col-sm-12 mb-5">
-                    <div class="about_section layout_padding">
-                        <div class="container">
-                            <div class="row">
-                                <div class="">
-                                    <div class="about_img"><img src="images/img-8.png"></div>
+                    @foreach ($article as $article)
+                        <div class="about_section layout_padding">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="">
+                                        <div class="about_img"><img src="images/img-8.png"></div>
 
-                                    <p class="post_text">Post By : 09/06/2019</p>
-                                    <h2 class="most_text">Most Awesome Blue Lake With Snow <br>River</h2>
-                                    <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    </p>
+                                        <p class="post_text">Posted On :{{ $article->created_at }}</p>
+                                        <h2 class="most_text"><a
+                                                href="/articles/{{ $article->id }}">{{ $article->title }}</a></h2>
+                                        <p class="lorem_text">
+                                            {{ $article->exerpt }}
+                                        </p>
 
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- blog section end -->
-                    <!-- newsletter section start -->
-                    <div class="about_section layout_padding">
-                        <div class="container">
-                            <div class="row">
-                                <div class="">
-                                    <div class="about_img"><img src="images/img-9.png"></div>
-
-                                    <p class="post_text">Post By : 09/06/2019</p>
-                                    <h2 class="most_text">Most Awesome Blue Lake With Snow <br>sky</h2>
-                                    <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    </p>
+                                    </div>
 
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- newsletter section end -->
-                    <!-- recent section start -->
-                    <div class="about_section layout_padding">
-                        <div class="container">
-                            <div class="row">
-                                <div class="">
-                                    <div class="about_img"><img src="images/img-10.png"></div>
+                    @endforeach
 
-                                    <p class="post_text">Post By : 09/06/2019</p>
-                                    <h2 class="most_text">Most Awesome Blue Lake With Snow <br>foreste</h2>
-                                    <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                        eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    </p>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
 
                 <div class="col-lg-4 col-sm-12">

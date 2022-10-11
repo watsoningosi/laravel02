@@ -20,7 +20,8 @@ Route::get('/', function () {
 
     return view('welcome', [
 
-        'articles' => App\Models\Article::take(3)->latest()->get()
+        'articles' => App\Models\Article::take(3)->latest()->get(),
+        'article' => App\Models\Article::all()
 
     ]);
 });
@@ -32,3 +33,5 @@ Route::get('/single', function () {
 });
 
 Route::get('/articles/{article}', 'App\Http\Controllers\ArticlesController@show');
+
+Route::get('single/{article}', 'App\Http\Controllers\ArticlesController@show');
