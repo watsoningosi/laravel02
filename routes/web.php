@@ -32,6 +32,6 @@ Route::get('/single', function () {
     return view('single');
 });
 
-Route::get('/articles/{article}', 'App\Http\Controllers\ArticlesController@show');
+Route::get('single', 'App\Http\Controllers\ArticlesController@index');
 
-Route::get('single/{article}', 'App\Http\Controllers\ArticlesController@show');
+Route::get('/articles/{article}', 'App\Http\Controllers\ArticlesController@show');

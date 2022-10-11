@@ -40,17 +40,17 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="{{ Request::path() === '/' ? 'active' : '' }} nav-link" href="/">Home</a>
+                            <a class="{{ Request::path() === './' ? 'active' : '' }} nav-link" href="/">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="{{ Request::path() === 'single' ? 'active' : '' }} nav-link"
-                                href="single">Blog</a>
+                            <a class="{{ Request::path() === '/single' ? 'active' : '' }} nav-link"
+                                href="/single">Blog</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="{{ Request::path() === 'contact' ? 'active' : '' }} nav-link"
-                                href="contact">Contact Us</a>
+                            <a class="{{ Request::path() === '/contact' ? 'active' : '' }} nav-link"
+                                href="/contact">Contact Us</a>
                         </li>
 
                     </ul>
@@ -68,16 +68,12 @@
                             <div class="mt-10"> </div>
                             <div class="col-lg-8 col-sm-12 mt-3">
                                 <div class="about_img"><img src="/images/img-8.png"></div>
-
-                                <p class="post_text">Posted On: {{ $article->created_at }}
+                                <br>
+                                <p class="lorem_text">Posted On: {{ $article->created_at }}
                                 </p>
                                 <h2 class="most_text">{{ $article->title }}</h2>
                                 <p class="lorem_text">{{ $article->body }}</p>
 
-                                <div class="social_icon_main mb-5 mt-2">
-
-                                    <div class="btn btn-info"><a href="#">Read More</a></div>
-                                </div>
                             </div>
 
                         </div>

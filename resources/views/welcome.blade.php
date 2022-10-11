@@ -12,7 +12,7 @@
                                     <div class="">
                                         <div class="about_img"><img src="images/img-8.png"></div>
 
-                                        <p class="post_text">Posted On :{{ $article->created_at }}</p>
+                                        <p class="lorem_text">Posted On :{{ $article->created_at }}</p>
                                         <h2 class="most_text"><a
                                                 href="/articles/{{ $article->id }}">{{ $article->title }}</a></h2>
                                         <p class="lorem_text">
