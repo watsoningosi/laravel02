@@ -16,9 +16,26 @@ class ArticlesController extends Controller
     }
     public function show($id)
     {
-
         $article = Article::find($id);
 
         return view('articles.show', ['article' => $article]);
+    }
+    public function create()
+    {
+        return view('articles.create');
+    }
+
+    public function store()
+    {
+        //  dd('hello'); 
+        // dump (request()->all());  
+        $article = new Article();
+
+        $article->title = request('title');
+        $article->exerpt = request('exerpt');
+        $article->body = request('body');
+        $article->save();
+
+        return redirect('single');
     }
 }
