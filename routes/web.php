@@ -30,3 +30,5 @@ Route::get('/contact', function () {
 Route::get('/single', function () {
     return view('single');
 });
+
+Route::get('/articles/{article}', 'App\Http\Controllers\ArticlesController@show');

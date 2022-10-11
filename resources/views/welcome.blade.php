@@ -73,7 +73,9 @@
                                     <div class="image_6"><img src="images/img-7.png"></div>
                                 </div>
                                 <div class="recent_right">
-                                    <h3 class="consectetur_text">{{ $article->title }}</h3>
+                                    <h3 class="consectetur_text">
+                                        <a href="/articles/{{ $article->id }}">{{ $article->title }}</a>
+                                    </h3>
                                     <p class="dolor_text">{{ $article->exerpt }} </p>
                                 </div>
                             </div>
