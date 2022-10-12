@@ -52,6 +52,9 @@
                             <a class="{{ Request::path() === 'contact' ? 'active' : '' }} nav-link"
                                 href="contact">Contact Us</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="{{ Request::path() === 'edit' ? 'active' : '' }} nav-link" href="edit">edit</a>
+                        </li>
 
                     </ul>
                 </div>

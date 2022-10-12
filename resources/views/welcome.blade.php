@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="col-lg-4 col-sm-12">
-                    <div class="newsletter_main">
+                    <div class="#">
                         <h1 class="recent_taital">Recent post</h1>
                         @foreach ($articles as $article)
                             <div class="recent_box">

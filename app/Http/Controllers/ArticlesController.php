@@ -38,4 +38,9 @@ class ArticlesController extends Controller
 
         return redirect('single');
     }
+
+    public function edit()
+    {
+        die('yes');
+    }
 }
